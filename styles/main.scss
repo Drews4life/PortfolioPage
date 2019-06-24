@@ -1,0 +1,18 @@
+@import './shared/fonts';
+
+//pages styles
+@import './index';
+
+//subcomponents
+@import './header';
+
+html, body {
+    height:100%;
+    width:100%;
+    font-family: "Montserrat", 'Helvetica';
+    // overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
