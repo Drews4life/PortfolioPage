@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Typed from 'react-typed'
 import { Container, Row, Col } from 'reactstrap'
 import BaseLayout from '../src/layouts/BaseLayout'
+import BasePage from '../src/layouts/BasePage'
 
 export default class extends Component {
 
