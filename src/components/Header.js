@@ -23,6 +23,8 @@ export default class Header extends Component {
         })
     }
     render() {
+        const { isLogged } = this.props
+
         return (
             <div>
                 <Navbar className='port-navbar port-default absolute' color="transparent" dark expand="md">
@@ -56,7 +58,7 @@ export default class Header extends Component {
 
                             <NavItem className="port-navbar-item">
                                 {
-                                    !AuthService.isAuthenticated ? (
+                                    !isLogged ? (
                                         <span onClick={AuthService.login} className="nav-link port-navbar-link clickable">Login</span>
                                     ) : (
                                         <span onClick={AuthService.logout} className="nav-link port-navbar-link clickable">Logout</span>

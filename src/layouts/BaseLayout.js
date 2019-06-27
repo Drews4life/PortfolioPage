@@ -3,12 +3,13 @@ import Header from '../components/Header'
 
 const BaseLayout = ({
     children,
+    isLogged,
     className = ""
 }) => {
 
     return (
         <div className="layout-container">
-            <Header/>
+            <Header isLogged={isLogged}/>
             <main className={`cover ${className}`}>
                 <div className="wrapper">
                     {children}
